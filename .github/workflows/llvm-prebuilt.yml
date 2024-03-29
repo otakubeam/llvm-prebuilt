@@ -110,7 +110,7 @@ jobs:
         shell: pwsh
         run: |
           cmake -G Ninja -S llvm-project/llvm -B llvm-host `
-            -DLLVM_ENABLE_PROJECTS=lld -DBUILD_SHARED_LIBS=ON `
+            -DLLVM_ENABLE_PROJECTS=lld `
             -DCMAKE_BUILD_TYPE=Release -Wno-dev
 
       - name: Build LLVM host tools
